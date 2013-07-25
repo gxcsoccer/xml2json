@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>xml to json</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="xml2json.js"></script>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var xml = '<a><b>haha</b><c><d>123</d><d>456</d><d>456</d></c></a>';
+		var string =
+		    '<html>'+
+		        '<head>'+
+		            '<!-- <script></script> -->'+
+		        '</head>'+
+		        '<body>'+
+		            '<div>'+
+		                '<canvas height="500" width=\'500\' />'+
+		            '</div>'+
+		            '<div>'+
+		                '<ul attr="blurg">'+
+		                    '<li>blarg</li>'+
+		                    '<li>blorg</li>'+
+		                    '<li>blurg</li>'+
+		                '</ul>'+
+		            '</div>'+
+		        '</body>'+
+		    '</html>';
+
+		console.log(xmlToJson(string));
+	</script>
+</html>
